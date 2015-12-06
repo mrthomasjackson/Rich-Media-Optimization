@@ -265,12 +265,6 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../resources/coke-classic-can.jpg) repeat-x  scroll;
-    background-color: #000;
-    -webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    background-size: 50%;
-    -o-background-size: 50%;
 }
 
 #map {
@@ -281,11 +275,11 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 175px;
+        padding-top: 125px;
     }
 
     .download-section {
-        padding: 75px 0;
+        padding: 25px 0;
     }
 
     #map {
@@ -376,3 +370,81 @@ body {
     width: 100%;
 }
 
+.tooltip{
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:5px;
+    font-size:11px;
+    opacity:0;
+
+}
+.tooltip.in{
+
+
+}
+.tooltip.top{
+    margin-top:-2px
+}
+.tooltip.right{
+    margin-left:2px
+}
+.tooltip.bottom{
+    margin-top:2px
+}
+.tooltip.left{
+    margin-left:-2px
+}
+.tooltip.top .tooltip-arrow{
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #ac2925;
+}
+.tooltip.left .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #ac2925;
+}
+.tooltip.bottom .tooltip-arrow{
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #ac2925;
+}
+.tooltip.right .tooltip-arrow{
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid #ac2925;
+}
+.tooltip-inner{
+    max-width:200px;
+    padding:3px 8px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    background-color:#ac2925;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px
+}
+.tooltip-arrow{
+    position:absolute;
+    width:0;
+    height:0
+}
+video {
+    width: 100%;
+    height: auto;
+}
